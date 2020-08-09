@@ -50,4 +50,8 @@ export class AuthService {
     await this.storage.remove("EXPIRES_IN");
     this.authSubject.next(false);
   }
+
+   isLoggedIn() {
+    return this.authSubject.asObservable();
+  }
 }
