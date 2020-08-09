@@ -1,0 +1,7 @@
+{
+  "name": "techi-auth",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
