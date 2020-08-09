@@ -44,4 +44,10 @@ export class AuthService {
       })
     );
   }
+
+   async logout() {
+    await this.storage.remove("ACCESS_TOKEN");
+    await this.storage.remove("EXPIRES_IN");
+    this.authSubject.next(false);
+  }
 }
